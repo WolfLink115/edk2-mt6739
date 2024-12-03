@@ -1,0 +1,2865 @@
+# Copyright (C) 2021 ClassFun
+# This file is distributed under the same license as the simple-init package.
+# BigfootACA <bigfoot@classfun.cn>, 2021.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: simple-init\n"
+"Report-Msgid-Bugs-To: BigfootACA <bigfoot@classfun.cn>\n"
+"POT-Creation-Date: 2021-06-25 11:06+0800\n"
+"PO-Revision-Date: 2021-06-25 11:08+0800\n"
+"Last-Translator: BigfootACA <bigfoot@classfun.cn>\n"
+"Language-Team: BigfootACA <bigfoot@classfun.cn>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "failed to get name\n"
+msgstr "无法获取名称\n"
+
+msgid "%s: command not found\n"
+msgstr "%s: 命令未找到\n"
+
+msgid "%s: not found\n"
+msgstr "%s: 未找到\n"
+
+msgid "%s: is a directory\n"
+msgstr "%s: 是一个文件夹\n"
+
+msgid "cannot read %s"
+msgstr "无法读取%s"
+
+msgid "readlink failed"
+msgstr "readlink失败"
+
+msgid "Exit shell"
+msgstr "退出shell"
+
+msgid "Simple init builtin shell"
+msgstr "simple-init内置shell"
+
+msgid "Insert a module into the Linux Kernel"
+msgstr "往Linux内核加载模块"
+
+msgid "Show the status of modules in the Linux Kernel"
+msgstr "查看Linux内核的模块状态"
+
+msgid "Add and remove modules from the Linux Kernel"
+msgstr "添加或移除Linux内核模块"
+
+msgid "Remove a module from the Linux Kernel"
+msgstr "移除Linux内核模块"
+
+msgid "Find a filesystem by label or UUID"
+msgstr "用卷标或者UUID查找文件系统"
+
+msgid "GUI Application"
+msgstr "GUI应用"
+
+msgid "Print system architecture"
+msgstr "输出系统架构"
+
+msgid "Concatenate FILE(s) to standard output."
+msgstr "连接文件并输出到标准输出"
+
+msgid "Change directory"
+msgstr "更改文件夹"
+
+msgid "Change directory (Direct call)"
+msgstr "更改文件夹（直接调用）"
+
+msgid "Clear screen"
+msgstr "清屏"
+
+msgid "Print or control the kernel ring buffer"
+msgstr "查看或控制内核日志缓冲区"
+
+msgid "Dump all arguments to stdout"
+msgstr "将所有参数输出到标准输出"
+
+msgid "Dump all arguments to initloggerd"
+msgstr "将所有参数输出到日志服务"
+
+msgid "Control init logger daemon"
+msgstr "控制日志服务"
+
+msgid "Dump all environments variables to stdout"
+msgstr "将所有环境变量输出到标准输出"
+
+msgid "Dump all environments variables to initloggerd"
+msgstr "将所有环境变量输出到日志服务"
+
+msgid "Show all shell builtin commands"
+msgstr "查看所有内置命令"
+
+msgid "Init simple device hotplug notifier"
+msgstr "simple-init简单热插拔通知器"
+
+msgid "Simple init"
+msgstr "Simple init"
+
+msgid "Init controller"
+msgstr "Init控制"
+
+msgid "Init simple device daemon"
+msgstr "simple-init设备热插拔服务"
+
+msgid "Launch simple init logger daemon"
+msgstr "启动simple-init日志服务"
+
+msgid "List directory contents"
+msgstr "查看文件夹内容"
+
+msgid "Check whether a directory or file is a mountpoint"
+msgstr "检查文件夹或文件是不是一个挂载点"
+
+msgid "Print system information"
+msgstr "输出系统信息"
+
+msgid "Remove a directory entry (Direct call)"
+msgstr "移除一个文件夹（直接调用）"
+
+msgid "Show simple-init version"
+msgstr "查看simple-init版本"
+
+msgid "Run a program in a new session."
+msgstr "在新会话运行程序"
+
+msgid "Always exit with 0 (true)"
+msgstr "总是以0退出(true)"
+
+msgid "Always exit with 1 (false)"
+msgstr "总是以1退出(true)"
+
+msgid "Usage: arch\n"
+msgstr "使用方法: arch\n"
+
+msgid ""
+"Usage: cat [OPTIONS]... [FILE]...\n"
+"Concatenate FILE(s) to standard output.\n"
+"Options:\n"
+"\t-h, --help           show this help\n"
+msgstr ""
+"使用方法: cat [选项]... [文件]...\n"
+"连接文件并输出到标准输出\n"
+"选项:\n"
+"\t-h, --help           查看此帮助\n"
+
+msgid "cd: too many arguments\n"
+msgstr "cd: 太多参数\n"
+
+msgid "cd: OLDPWD not set\n"
+msgstr "cd: OLDPWD未设置\n"
+
+msgid "Usage: clear\n"
+msgstr "使用方法: clear\n"
+
+msgid ""
+"Usage: dmesg [OPTIONS]\n"
+"Print or control the kernel ring buffer\n"
+"Options:\n"
+"\t-s, --size <SIZE>    buffer size\n"
+"\t-n, --level <LEVEL>  set console logging level\n"
+"\t-c, --clear          clear ring buffer after printing\n"
+"\t-r, --raw            print raw message buffer\n"
+"\t-h, --help           show this help\n"
+msgstr ""
+"使用方法: dmesg [OPTIONS]\n"
+"查看或控制内核日志缓冲区\n"
+"选项:\n"
+"\t-s, --size <SIZE>    缓冲区大小\n"
+"\t-n, --level <LEVEL>  设置终端日志级别\n"
+"\t-c, --clear          打印完后清空内核日志缓冲区\n"
+"\t-r, --raw            输出原始日志\n"
+"\t-h, --help           查看此帮助\n"
+
+msgid "Usage: dumpenv\n"
+msgstr "使用方法: dumpenv\n"
+
+msgid "Usage: logdumpenv\n"
+msgstr "使用方法: logdumpenv\n"
+
+msgid "exit: too many arguments\n"
+msgstr "exit: 太多参数\n"
+
+msgid ""
+"Usage: findfs [OPTIONS] {LABEL,UUID,PARTUUID,PARTLABEL}=<VALUE>\n"
+"Find a filesystem by label or UUID.\n"
+msgstr ""
+"使用方法: findfs [选项] {LABEL,UUID,PARTUUID,PARTLABEL}=<VALUE>\n"
+"用卷标或者UUID查找文件系统\n"
+
+msgid "findfs: bad usage\n"
+msgstr "findfs: 错误的用法\n"
+
+msgid "findfs: unable to resolve '%s'\n"
+msgstr "findfs: 无法解析'%s'\n"
+
+msgid "Usage: help\n"
+msgstr "使用方法: help\n"
+
+msgid ""
+"Usage: initctl [OPTION]...\n"
+"Control init daemon.\n"
+"\n"
+"Commands:\n"
+"\tpoweroff                  Power-off system\n"
+"\thalt                      Halt system\n"
+"\treboot [STRING]           Reboot system\n"
+"\tswitchroot <ROOT> [INIT]  Switch to new root\n"
+"\tsetenv <KEY> <VALUE>      Add environment variable\n"
+"\taddenv <KEY>=<VALUE>      Add environment variable\n"
+"\tlanguage <LANGUAGE>       Set system current language\n"
+"\tstart <SERVICE>           Start service\n"
+"\tstop <SERVICE>            Stop service\n"
+"\trestart <SERVICE>         Re-Start service\n"
+"\treload <SERVICE>          Re-Load service\n"
+"\tdump                      Dump all service to loggerd\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>     Use custom initd socket\n"
+"\t-h, --help                Display this help and exit\n"
+msgstr ""
+"使用方法: initctl [选项]...\n"
+"控制init.\n"
+"\n"
+"命令:\n"
+"\tpoweroff                  关闭系统\n"
+"\thalt                      停机系统\n"
+"\treboot [参数]             重启系统\n"
+"\tswitchroot <新根> [INIT]  切换到新的根\n"
+"\tsetenv <键> <值>          添加环境变量\n"
+"\taddenv <键>=<值>          添加环境变量\n"
+"\tlanguage <语言>           设置系统语言\n"
+"\tstart <服务>              启动服务\n"
+"\tstop <服务>               停止服务\n"
+"\trestart <服务>            重启服务\n"
+"\treload <服务>             重新加载服务\n"
+"\tdump                      导出所有服务到日志服务\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>     使用别的控制套接字\n"
+"\t-h, --help                查看此帮助\n"
+
+msgid "send command"
+msgstr "发送命令"
+
+msgid "execute %s: %s\n"
+msgstr "执行%s: %s\n"
+
+msgid "too many arguments\n"
+msgstr "参数过多\n"
+
+msgid "missing arguments\n"
+msgstr "缺少参数\n"
+
+msgid "invalid service name\n"
+msgstr "无效的服务名称\n"
+
+msgid "invalid environ name\n"
+msgstr "无效的环境变量名称\n"
+
+msgid "arguments too long\n"
+msgstr "参数过长\n"
+
+msgid "invalid action %s\n"
+msgstr "无效操作 %s\n"
+
+msgid "no command specified\n"
+msgstr "未指定命令\n"
+
+msgid "unknown command: %s\n"
+msgstr "未知操作: %s\n"
+
+msgid "Invalid module format"
+msgstr "未知的模块格式"
+
+msgid "Unknown symbol in module"
+msgstr "模块内存在未知符号"
+
+msgid "Module has wrong symbol version"
+msgstr "模块存在错误的符号版本"
+
+msgid "Invalid parameters"
+msgstr "无效的选项"
+
+msgid ""
+"Usage: loggerctl [OPTION]...\n"
+"Control init logger daemon.\n"
+"\n"
+"Options:\n"
+"\t-t, --tag <TAG>          set log tag\n"
+"\t-p, --pid <PID>          set log pid\n"
+"\t-n, --level <LEVEL>      set log level\n"
+"\t-s, --socket <SOCKET>    control socket (default is %s)\n"
+"\t-l, --listen <SOCKET>    listen to new socket\n"
+"\t-o, --output <OUTPUT>    write log to new file\n"
+"\t-a, --add                send log to loggerd\n"
+"\t-q, --quit               terminate loggerd\n"
+"\t-h, --help               display this help and exit\n"
+msgstr ""
+"使用方法: loggerctl [选项]...\n"
+"控制日志服务\n"
+"\n"
+"选项:\n"
+"\t-t, --tag <TAG>          日志标记\n"
+"\t-p, --pid <PID>          日志PID\n"
+"\t-n, --level <LEVEL>      日志级别\n"
+"\t-s, --socket <SOCKET>    控制套接字 (默认是%s)\n"
+"\t-l, --listen <SOCKET>    监听新的\n"
+"\t-o, --output <OUTPUT>    将日志写入新的文件\n"
+"\t-a, --add                将日志发送到日志服务\n"
+"\t-q, --quit               结束日志服务\n"
+"\t-h, --help               查看此帮助\n"
+
+msgid "invalid PID number: %s\n"
+msgstr "无效的PID: %s\n"
+
+msgid "invalid log level: %s\n"
+msgstr "无效日志级别: %s\n"
+
+msgid "terminate loggerd"
+msgstr "结束日志服务"
+
+msgid "open file %s"
+msgstr "打开文件 %s"
+
+msgid "listen new socket %s"
+msgstr "监听新的套接字 %s"
+
+msgid "no action specified\n"
+msgstr "未指定操作\n"
+
+msgid "%s: cannot readlink %s%s%s"
+msgstr "%s: 无法读取链接 %s%s%s"
+
+msgid "%s: cannot stat %s%s%s"
+msgstr "%s: 无法获取状态 %s%s%s"
+
+msgid "ls: opening directory %s"
+msgstr "ls: 无法打开文件夹 %s"
+
+msgid "ls: reading directory %s"
+msgstr "ls: 读取文件夹 %s"
+
+msgid ""
+"Usage: ls [OPTION]... [FILE]...\n"
+"List information about the FILEs (the current directory by default).\n"
+"\n"
+"Options:\n"
+"\t-l, --list            use a long listing format\n"
+"\t-a, --all             do not ignore entries starting with .\n"
+"\t-d, --directory       list directories themselves, not their contents\n"
+"\t-i, --inode           print the index number of each file\n"
+"\t-n, --numeric-uid-gid like -l, but list numeric user and group IDs\n"
+"\t-s, --size            print the allocated size of each file, in blocks\n"
+"\t-h, --human-readable  with -l and -s, print sizes like 1K 234M 2G etc.\n"
+"\t-e, --full-time       show full-iso format time\n"
+"\t-c, --ctime           show ctime (time of last modification)\n"
+"\t-u, --atime           show atime (time of last access)\n"
+"\t-g, --no-group        in a long listing, don't print group names\n"
+"\t-1, --oneline         list one file per line.\n"
+"\t-F, --classify        append indicator (one of */=>@|) to entries\n"
+"\t-C, --color[=WHEN]    colorize the output, WHEN can be always, auto, never, force\n"
+"\t-H, --help            display this help and exit\n"
+msgstr ""
+"使用方法: ls [选项]... [文件]...\n"
+"列出指定文件的信息（默认为当前文件夹）。\n"
+"\n"
+"选项:\n"
+"\t-l, --list            使用长列表格式\n"
+"\t-a, --all             不忽略以.开头的项目\n"
+"\t-d, --directory       查看文件夹本身，而不是其内容\n"
+"\t-i, --inode           显示文件的索引编号\n"
+"\t-n, --numeric-uid-gid 类似于-l，但是显示数字格式的用户ID和组ID\n"
+"\t-s, --size            显示文件的已分配块的大小\n"
+"\t-h, --human-readable  类似于-l和-s，但是格式化输出大小，如1K 234M 2G\n"
+"\t-e, --full-time       显示full-iso格式的时间\n"
+"\t-c, --ctime           显示最后修改时间(ctime)\n"
+"\t-u, --atime           显示最后访问时间(atime)\n"
+"\t-g, --no-group        长列表格式中不显示组名\n"
+"\t-1, --oneline         每行显示一个文件\n"
+"\t-F, --classify        在项目结尾添加指示符(*/=>@|之一)\n"
+"\t-C, --color[=WHEN]    彩色输出, WHEN可以为always, auto, never, force\n"
+"\t-H, --help            显示此帮助\n"
+
+msgid "Usage: lsmod\n"
+msgstr "用法: lsmod\n"
+
+msgid "error: kmod_new failed!\n"
+msgstr "错误: kmod_new失败！\n"
+
+msgid "error: could not get list of modules"
+msgstr "错误: 无法获取模块列表"
+
+msgid "Module                  Size  Used by"
+msgstr "模块                    大小  使用者"
+
+msgid ""
+"Usage:\n"
+"\tmodprobe [options] [-i] [-b] modulename\n"
+"\tmodprobe [options] -a [-i] [-b] modulename [modulename...]\n"
+"\tmodprobe [options] -r [-i] modulename\n"
+"\tmodprobe [options] -r -a [-i] modulename [modulename...]\n"
+"\tmodprobe [options] -c\n"
+"\tmodprobe [options] --dump-modversions filename\n"
+"Management Options:\n"
+"\t-a, --all                   Consider every non-argument to\n"
+"\t                            be a module name to be inserted\n"
+"\t                            or removed(-r)\n"
+"\t-r, --remove                Remove modules instead of inserting\n"
+"\t    --remove-dependencies   Also remove modules depending on it\n"
+"\t-R, --resolve-alias         Only lookup and print alias and exit\n"
+"\t    --first-time            Fail if module already inserted or removed\n"
+"\t-i, --ignore-install        Ignore install commands\n"
+"\t-i, --ignore-remove         Ignore remove commands\n"
+"\t-b, --use-blacklist         Apply blacklist to resolved alias.\n"
+"\t-f, --force                 Force module insertion or removal.\n"
+"\t                            implies --force-modversions and\n"
+"\t                            --force-vermagic\n"
+"\t    --force-modversion      Ignore module's version\n"
+"\t    --force-vermagic        Ignore module's version magic\n"
+"\n"
+"Query Options:\n"
+"\t-D, --show-depends          Only print module dependencies and exit\n"
+"\t    --show-modversions      Dump module symbol version and exit\n"
+"\t    --dump-modversions      Same as --show-modversions\n"
+"\t    --show-exports          Only print module exported symbol versions and "
+"exit\n"
+"\n"
+"General Options:\n"
+"\t-n, --dry-run               Do not execute operations,just print out\n"
+"\t-n, --show                  Same as --dry-run\n"
+"\t-d, --dirname=DIR           Use DIR as filesystem root for /lib/modules\n"
+"\t-S, --set-version=VERSION   Use VERSION instead of `uname -r`\n"
+"\t-q, --quiet                 disable messages\n"
+"\t-v, --verbose               enables more messages\n"
+"\t-h, --help                  show this help"
+msgstr ""
+"使用方法:\n"
+"\tmodprobe [选项] [-i] [-b] 模块名\n"
+"\tmodprobe [选项] -a [-i] [-b] 模块名 [模块名...]\n"
+"\tmodprobe [选项] -r [-i] 模块名\n"
+"\tmodprobe [选项] -r -a [-i] 模块名 [模块名...]\n"
+"\tmodprobe [选项] -c\n"
+"\tmodprobe [选项] --dump-modversions 文件名\n"
+"管理选项:\n"
+"\t-a, --all                   把所有参数当作模块名\n"
+"\t-r, --remove                移除模块\n"
+"\t    --remove-dependencies   一并移除依赖它的模块\n"
+"\t-R, --resolve-alias         只查找并解析别名\n"
+"\t    --first-time            如果模块已加载或者已移除则失败\n"
+"\t-i, --ignore-install        忽略加载命令\n"
+"\t-i, --ignore-remove         忽略移除命令\n"
+"\t-b, --use-blacklist         应用黑名单到别名.\n"
+"\t-f, --force                 强制加载或卸载\n"
+"\t                            包含--force-modversions和\n"
+"\t                            --force-vermagic\n"
+"\t    --force-modversion      忽略模块版本\n"
+"\t    --force-vermagic        忽略模块版本和头\n"
+"\n"
+"请求选项:\n"
+"\t-D, --show-depends          只显示模块依赖\n"
+"\t    --show-modversions      输出模块符号版本\n"
+"\t    --dump-modversions      等同于--show-modversions\n"
+"\t    --show-exports          只输出模块公开符号版本\n"
+"\n"
+"基本选项:\n"
+"\t-n, --dry-run               不实际执行操作，只输出信息\n"
+"\t-n, --show                  等同于--dry-run\n"
+"\t-d, --dirname=DIR           使用DIR当作/lib/modules的文件系统根\n"
+"\t-S, --set-version=VERSION   使用VERSION代替`uname -r`\n"
+"\t-q, --quiet                 不显示信息\n"
+"\t-v, --verbose               显示更多信息\n"
+"\t-h, --help                  显示此帮助"
+
+msgid "modprobe: Module %s not found.\n"
+msgstr "modprobe: 模块%s未找到\n"
+
+msgid "could not get modversions of %s"
+msgstr "无法获取%s的模块版本"
+
+msgid "could not get symbols of %s"
+msgstr "无法获取%s的符号"
+
+msgid "Error running %s command for %s\n"
+msgstr "当执行%s命令（为模块%s）\n"
+
+msgid "modprobe: Module %s is not in kernel.\n"
+msgstr "modprobe: 模块%s不在内核中\n"
+
+msgid "could not get softdeps of '%s': %s\n"
+msgstr "无法获取%s的软依赖: %s\n"
+
+msgid "modprobe: Module %s is builtin.\n"
+msgstr "modprobe: 模块%s已内建\n"
+
+msgid "modprobe: Module %s is in use.\n"
+msgstr "modprobe: 模块%s正在使用\n"
+
+msgid "Module %s not found in directory %s\n"
+msgstr "模块未找到于文件夹%s\n"
+
+msgid "(missing)"
+msgstr "(暂缺)"
+
+msgid "could not insert '%s': "
+msgstr "无法加载'%s': "
+
+msgid "Module already in kernel\n"
+msgstr "模块已加载在内核中\n"
+
+msgid "Unknown symbol or unknown param\n"
+msgstr "未知符号或者未知选项\n"
+
+msgid "could not append value to $MODPROBE_OPTIONS\n"
+msgstr "无法添加值到$MODPROBE_OPTIONS\n"
+
+msgid "could not setenv (MODPROBE_OPTIONS,\"%s\")\n"
+msgstr "无法设置环境变量(MODPROBE_OPTIONS,\"%s\")\n"
+
+msgid "could not gather module options: out-of-memory\n"
+msgstr "无法获取模块选项: 无法分配内存\n"
+
+msgid "Could not prepend options from command line\n"
+msgstr "无法从命令行中预先添加选项\n"
+
+msgid "missing parameters. See -h.\n"
+msgstr "缺失选项。请看-h\n"
+
+msgid "uname failed"
+msgstr "uname失败"
+
+msgid "%s: not a block device"
+msgstr "%s: 不是一个块设备"
+
+msgid ""
+"Usage: rmmod [OPTIONS] MODULENAME ...\n"
+"Remove a module from the Linux Kernel\n"
+"\n"
+"Options:\n"
+"\t-f,--force       forces unload a module\n"
+"\t-h,--help        show this help\n"
+msgstr ""
+"使用方法: rmmod [选项] 模块名称 ...\n"
+"从Linux内核移除一个模块\n"
+"\n"
+"选项:\n"
+"\t-f,--force       强制卸载模块\n"
+"\t-h,--help        显示此帮助\n"
+
+msgid "rmmod: Module %s is builtin.\n"
+msgstr "rmmod: 模块%s已内建\n"
+
+msgid "rmmod: Module %s is not currently loaded\n"
+msgstr "rmmod: 模块%s未加载\n"
+
+msgid "rmmod: Module %s is in use by:"
+msgstr "rmmod: 模块%s正在被以下使用:"
+
+msgid "rmmod: Module %s is in use\n"
+msgstr "rmmod: 模块%s正在被使用:\n"
+
+msgid "rmmod: Module unloading is not supported\n"
+msgstr "rmmod: 不支持模块卸载\n"
+
+msgid "rmmod: missing module name.\n"
+msgstr "rmmod: 缺少模块名称\n"
+
+msgid "rmmod: could not use module %s"
+msgstr "rmmod: 无法使用模块 %s"
+
+msgid "rmmod: could not remove module %s"
+msgstr "rmmod: 无法移除模块 %s"
+
+msgid ""
+"Usage:\n"
+"\tmountpoint [-qd] /path/to/directory\n"
+"\tmountpoint -x /dev/device\n"
+"Check whether a directory or file is a mountpoint.\n"
+"\n"
+"Options:\n"
+"\t-q, --quiet        quiet mode - don't print anything\n"
+"\t-n, --nofollow     do not follow symlink\n"
+"\t-d, --fs-devno     print maj:min device number of the filesystem\n"
+"\t-x, --devno        print maj:min device number of the block device\n"
+msgstr ""
+"使用方法:\n"
+"\tmountpoint [-qd] /path/to/directory\n"
+"\tmountpoint -x /dev/device\n"
+"检查文件夹或文件是不是一个挂载点\n"
+"\n"
+"选项:\n"
+"\t-q, --quiet        不要输出任何结果\n"
+"\t-n, --nofollow     不要跟随链接\n"
+"\t-d, --fs-devno     输出maj:min文件系统的设备号\n"
+"\t-x, --devno        输出maj:min块设备的设备号\n"
+
+msgid "mountpoint: bad usage\n"
+msgstr "mountpoint: 无效用法\n"
+
+msgid "mountpoint: -x and -n are mutually exclusive\n"
+msgstr "mountpoint: -x和-n不能同时使用\n"
+
+msgid "%s is not a mountpoint\n"
+msgstr "%s不是一个挂载点\n"
+
+msgid "%s is a mountpoint\n"
+msgstr "%s是一个挂载点\n"
+msgid ""
+"Usage: setsid [OPTIONS] MODULENAME ...\n"
+"Run a program in a new session.\n"
+"\n"
+"Options:\n"
+"\t-c, --ctty     set the controlling terminal to the current one\n"
+"\t-f, --fork     always fork\n"
+"\t-w, --wait     wait program to exit, and use the same return\n"
+msgstr ""
+
+msgid "child %d did not exit normally"
+msgstr "子进程%d未正常退出"
+
+msgid "setsid failed"
+msgstr "setsid失败"
+
+msgid "failed to set the ctty"
+msgstr "无法设置ctty"
+
+msgid "exec %s"
+msgstr "执行%s"
+
+msgid ""
+"Usage: uname [OPTION]...\n"
+"Print system information, default -s.\n"
+"\n"
+"Options:\n"
+"\t-a, --all                print all information expect -p, -i\n"
+"\t-s, --kernel-name        print the kernel name\n"
+"\t-n, --nodename           print the network node hostname\n"
+"\t-r, --kernel-release     print the kernel release\n"
+"\t-v, --kernel-version     print the kernel version\n"
+"\t-m, --machine            print the machine hardware name\n"
+"\t-p, --processor          print the processor type\n"
+"\t-i, --hardware-platform  print the hardware platform\n"
+"\t-o, --operating-system   print the operating system\n"
+"\t-h, --help               display this help and exit\n"
+msgstr ""
+"使用方法: uname [选项]...\n"
+"输出系统版本信息，默认-s.\n"
+"\n"
+"选项:\n"
+"\t-a, --all                输出除了-p, -i外的所有信息\n"
+"\t-s, --kernel-name        输出内核名称\n"
+"\t-n, --nodename           输出网络主机名\n"
+"\t-r, --kernel-release     输出内核发行号\n"
+"\t-v, --kernel-version     输出内核版本\n"
+"\t-m, --machine            输出机器硬件名称\n"
+"\t-p, --processor          输出处理器类型\n"
+"\t-i, --hardware-platform  输出硬件平台\n"
+"\t-o, --operating-system   输出操作系统\n"
+"\t-h, --help               显示此帮助\n"
+
+msgid "uname: extra operand: %s\n"
+msgstr "uname: 额外的操作数: %s\n"
+
+msgid "unlink: missing operand\n"
+msgstr "unlink: 缺少操作数\n"
+
+msgid "unlink: too many arguments\n"
+msgstr "unlink: 参数过多\n"
+
+msgid "Usage: version"
+msgstr "使用方法: version"
+
+msgid "File Manager"
+msgstr "文件管理器"
+
+msgid "Partition Manager"
+msgstr "分区管理器"
+
+msgid "USB Control"
+msgstr "USB控制"
+
+msgid "Registry Editor"
+msgstr "注册表编辑器"
+
+msgid "Image Backgup Recovery"
+msgstr "镜像备份还原"
+
+msgid "Enter TWRP"
+msgstr "进入TWRP"
+
+msgid "System Info"
+msgstr "系统信息"
+
+msgid "Multi-Boot Manage"
+msgstr "多启动管理"
+
+msgid "UEFI Boot Menu"
+msgstr "UEFI启动管理"
+
+msgid "Reboot Menu"
+msgstr "重启菜单"
+
+msgid "Loggerd Viewer"
+msgstr "查看日志"
+
+msgid "OK"
+msgstr "确定"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Initialize disks scanner failed"
+msgstr "初始化磁盘扫描器失败"
+
+msgid "Are you sure you want to operate on disk %s?"
+msgstr "你确定要操作硬盘%s吗？"
+
+msgid "Select a disk to process"
+msgstr "选择一个硬盘进行操作"
+
+msgid "Show all blocks"
+msgstr "显示所有块设备"
+
+msgid "Refresh"
+msgstr "刷新"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "(none)"
+msgstr "(无)"
+
+msgid "Free Space"
+msgstr "空闲空间"
+
+msgid "Start: %s(%lu) End %s(%lu)"
+msgstr "起始: %s(%lu) 结束: %s(%lu)"
+
+msgid "(unknown)"
+msgstr "(未知)"
+
+msgid "init disk context failed"
+msgstr "初始化磁盘上下文失败"
+
+msgid "Partition a disk"
+msgstr "磁盘分区"
+
+msgid "Disk..."
+msgstr "磁盘..."
+
+msgid "Partition..."
+msgstr "分区..."
+
+msgid "Reload"
+msgstr "重载"
+
+msgid "New"
+msgstr "新建"
+
+msgid "This disk has no label"
+msgstr "此硬盘没有分区表"
+
+msgid "This function does not implemented"
+msgstr "该功能暂未实现"
+
+msgid "Backlight"
+msgstr "背光灯"
+
+msgid "Select an action you want to do"
+msgstr "选择要进行的操作"
+
+msgid "get brightness failed: %m"
+msgstr "获取亮度失败: %m"
+
+msgid "Change backlight level"
+msgstr "更改亮度级别"
+
+msgid "Load log failed: %m"
+msgstr "加载日志失败: %m"
+
+msgid "Loading..."
+msgstr "加载中..."
+
+msgid "Go top"
+msgstr "回到顶部"
+
+msgid "Go bottom"
+msgstr "回到底部"
+
+msgid "init control command failed: %s"
+msgstr "init控制命令失败: %s"
+
+msgid "Reboot"
+msgstr "重启"
+
+msgid "Warm Reboot"
+msgstr "热重启"
+
+msgid "Cold Reboot"
+msgstr "冷重启"
+
+msgid "Reboot into EDL (9008)"
+msgstr "重启到紧急下载模式(9008)"
+
+msgid "Reboot into Recovery"
+msgstr "重启到恢复模式(Recovery)"
+
+msgid "Reboot into Bootloader"
+msgstr "重启到线刷模式(Bootloader)"
+
+msgid "Power Off"
+msgstr "关机"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Select language"
+msgstr "选择语言"
+
+msgid "open dir failed: %s"
+msgstr "打开文件夹失败: %s"
+
+msgid "Parent folder"
+msgstr "上级目录"
+
+msgid "nothing here"
+msgstr "空"
+
+msgid "Load options failed"
+msgstr "加载选项失败"
+
+msgid "No options found"
+msgstr "没有找到任何选项"
+
+msgid "Change mouse scale level"
+msgstr "更改鼠标缩放级别"
+
+msgid "Mouse Tools"
+msgstr "鼠标工具"
+
+msgid "GUI Benchmark"
+msgstr "GUI性能跑分"
+
+msgid "invalid operation %s\n"
+msgstr "无效操作 %s\n"
+
+msgid ""
+"Usage: service [SERVICE] [OPERATION]\n"
+"Control service operation (SysV Compatible).\n\n"
+"Operation:\n"
+"\tstart                  Start service\n"
+"\tstop                   Stop service\n"
+"\trestart                Re-Start service\n"
+"\treload                 Re-Load service\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Use custom initd socket\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: service [服务名称] [操作]\n"
+"控制服务状态 (SysV兼容).\n\n"
+"操作:\n"
+"\tstart                  启动服务\n"
+"\tstop                   停止服务\n"
+"\trestart                重启服务\n"
+"\treload                 重新加载服务\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  使用别的控制套接字\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "Control service operation (SysV Compatible)"
+msgstr "控制服务状态 (SysV兼容)"
+
+msgid ""
+"Usage: reboot [OPTIONS] [ARG]\n"
+"Reboot the system.\n\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Use custom initd socket\n"
+"\t-d, --delay <DELAY>    Delay interval seconds\n"
+"\t-n, --no-sync          Do not sync when force reboot\n"
+"\t-f, --force            Force reboot (direct call reboot syscall)\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: reboot [选项] [参数]\n"
+"重启系统.\n\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  使用别的控制套接字\n"
+"\t-d, --delay <DELAY>    延迟秒\n"
+"\t-n, --no-sync          强制重启前不进行sync操作\n"
+"\t-f, --force            强制重启 (直接执行reboot系统调用)\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "Reboot the system"
+msgstr "重启系统"
+
+msgid "invalid delay seconds\n"
+msgstr "无效延迟秒数\n"
+
+msgid "invalid reboot argument\n"
+msgstr "无效重启参数\n"
+
+msgid "call reboot failed: %s\n"
+msgstr "执行重启失败: %s\n"
+
+msgid ""
+"Usage: poweroff [OPTIONS]\n"
+"Halt and shut off power.\n\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Use custom initd socket\n"
+"\t-d, --delay <DELAY>    Delay interval seconds\n"
+"\t-n, --no-sync          Do not sync when force poweroff\n"
+"\t-f, --force            Force poweroff (direct call reboot syscall)\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: poweroff [选项]\n"
+"关机.\n\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  使用别的控制套接字\n"
+"\t-d, --delay <DELAY>    延迟秒\n"
+"\t-n, --no-sync          强制关机前不进行sync操作\n"
+"\t-f, --force            强制关机 (直接执行reboot系统调用)\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "Halt and shut off power"
+msgstr "关机"
+
+msgid "call poweroff failed: %s\n"
+msgstr "执行关机失败: %s\n"
+
+msgid ""
+"Usage: halt [OPTIONS]\n"
+"Halt the system.\n\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Use custom initd socket\n"
+"\t-d, --delay <DELAY>    Delay interval seconds\n"
+"\t-n, --no-sync          Do not sync when force halt\n"
+"\t-f, --force            Force halt (direct call reboot syscall)\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: halt [选项]\n"
+"停机系统.\n\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  使用别的套接字\n"
+"\t-d, --delay <DELAY>    延迟秒\n"
+"\t-n, --no-sync          强制停机前不进行sync操作\n"
+"\t-f, --force            强制停机 (直接执行reboot系统调用)\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "call halt failed: %s\n"
+msgstr "执行停机失败: %s\n"
+
+msgid "Halt the system"
+msgstr "停机系统"
+
+msgid ""
+"Usage: iniconfd [OPTION]...\n"
+"Start Init Config daemon.\n\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Listen custom control socket (default is %s)\n"
+"\t-d, --daemon           Run in daemon\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: iniconfd [选项]...\n"
+"启动设置存储服务.\n\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  监听自定义的套接字路径 (默认是%s)\n"
+"\t-d, --daemon           运行为守护进程\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "Init Config Daemon"
+msgstr "设置存储服务"
+
+msgid ""
+"Usage: confctl [OPTION] [KEY [VALUE|OWNER|GROUP|MODE]]\n"
+"Control init config daemon.\n\n"
+"Options:\n"
+"\t-s, --socket <SOCKET>  Use custom control socket (default is %s)\n"
+"\t-d, --delete <KEY>     Delete item\n"
+"\t-l, --list <KEY>       List items\n"
+"\t-O, --chown            Change item owner\n"
+"\t-G, --chgrp            Change item group\n"
+"\t-M, --chmod            Change item mode\n"
+"\t-o, --getown           Get item owner\n"
+"\t-g, --getgrp           Get item group\n"
+"\t-m, --getmod           Get item mode\n"
+"\t-L, --load <PATH>      Load config from a file\n"
+"\t-S, --save <PATH>      Save config to a file\n"
+"\t-x, --path <PATH>      Set default config path\n"
+"\t-r, --rename           Rename config item\n"
+"\t-q, --quit             Terminate confd\n"
+"\t-D, --dump             Dump config store\n"
+"\t-h, --help             Display this help and exit\n"
+msgstr ""
+"使用方法: confctl [选项] [键 [值|所有者|组|权限]]\n"
+"控制设置存储服务.\n\n"
+"选项:\n"
+"\t-s, --socket <SOCKET>  使用自定义的套接字路径 (默认是%s)\n"
+"\t-d, --delete <KEY>     删除项\n"
+"\t-l, --list <KEY>       列出项\n"
+"\t-O, --chown            修改项所有者\n"
+"\t-G, --chgrp            修改项所有组\n"
+"\t-M, --chmod            修改项权限\n"
+"\t-o, --getown           获取项所有者\n"
+"\t-g, --getgrp           获取项所有组\n"
+"\t-m, --getmod           获取项权限\n"
+"\t-L, --load <PATH>      加载配置文件\n"
+"\t-S, --save <PATH>      保存配置文件\n"
+"\t-x, --path <PATH>      设置默认的配置文件位置\n"
+"\t-r, --rename           重命名配置项\n"
+"\t-q, --quit             结束设置存储服务\n"
+"\t-D, --dump             导出设置存储到日志服务\n"
+"\t-h, --help             查看此帮助\n"
+
+msgid "Control config daemon"
+msgstr "控制设置存储服务"
+
+msgid "terminate confd failed"
+msgstr "结束设置存储服务失败"
+
+msgid "dump config store failed"
+msgstr "导出设置存储到日志服务失败"
+
+msgid "delete config item failed"
+msgstr "删除项失败"
+
+msgid "save config failed"
+msgstr "保存配置文件失败"
+
+msgid "load config failed"
+msgstr "保存配置文件失败"
+
+msgid "set default config failed"
+msgstr "设置默认配置文件路径失败"
+
+msgid "set conf key '%s' failed"
+msgstr "设置配置项'%s'失败"
+
+msgid "invalid integer\n"
+msgstr "无效整型数\n"
+
+msgid "invalid boolean\n"
+msgstr "无效布尔值\n"
+
+msgid "read conf key '%s' failed"
+msgstr "读取配置项'%s'失败"
+
+msgid "'%s' is not a value\n"
+msgstr "配置项'%s'不是一个值\n"
+
+msgid "Exit GUI Application and enter UEFI Shell?"
+msgstr "退出GUI启动器并进入UEFI Shell?"
+
+msgid "Exit GUI Application and enter Linux Simple Mass Storage?"
+msgstr "退出GUI启动器并进入Linux大容量存储?"
+
+msgid "Mass Storage"
+msgstr "大容量存储"
+
+msgid "%s: unrecognized option: %s\n"
+msgstr "%s: 未知的选项: %s\n"
+
+msgid "%s: option requires an argument: %s\n"
+msgstr "%s: 选项需要一个参数: %s\n"
+
+msgid "%s: option does not take an argument: %s\n"
+msgstr "%s: 选项不需要一个参数: %s\n"
+
+msgid "%s: option is ambiguous: %s\n"
+msgstr "%s: 选项有歧义: %s\n"
+
+msgid "Usage: confget <KEY>\n"
+msgstr "使用方法: confget <键>\n"
+
+msgid "Usage: confset <KEY> <VALUE>\n"
+msgstr "使用方法: confset <键> <值>\n"
+
+msgid "Usage: confdel <KEY>\n"
+msgstr "使用方法: confdel <键>\n"
+
+msgid "config daemon delete failed"
+msgstr "配置项删除失败"
+
+msgid "Usage: confdump\n"
+msgstr "使用方法: confdump\n"
+
+msgid "config daemon dump failed"
+msgstr "配置存储导出失败"
+
+msgid "Get config item"
+msgstr "读取配置项"
+
+msgid "Set config item"
+msgstr "修改配置项"
+
+msgid "Delete config item"
+msgstr "删除配置项"
+
+msgid "Dump config store"
+msgstr "导出配置存储"
+
+msgid "Themes"
+msgstr "主题"
+
+msgid "Select theme"
+msgstr "选择主题"
+
+msgid "Dark Mode"
+msgstr "暗色模式"
+
+msgid "Need to restart GUI when changing theme"
+msgstr "更改主题后需要重启GUI"
+
+msgid "Restart"
+msgstr "重启"
+
+msgid "USB Gadget"
+msgstr "USB工具"
+
+msgid "not a UEFI Application"
+msgstr "不是一个UEFI应用"
+
+msgid "Start UEFI Application '%s'?"
+msgstr "启动UEFI程序'%s'?"
+
+msgid "Restart gadget service failed: %m"
+msgstr "重启USB工具服务失败: %m"
+
+msgid "Are you sure to restart gadget service?"
+msgstr "确定要重启USB工具服务？"
+
+msgid "Are you sure to delete function %s?"
+msgstr "确定删除功能%s?"
+
+msgid "Invalid vendor id number"
+msgstr "无效的厂商(Vendor)ID数字"
+
+msgid "Invalid product id number"
+msgstr "无效的产品(Product)ID数字"
+
+msgid "USB Gadget Base Info Edit"
+msgstr "USB工具基本信息编辑"
+
+msgid "Gadget Name:"
+msgstr "工具名称:"
+
+msgid "USB Configuration:"
+msgstr "USB配置(configuration):"
+
+msgid "USB Serial Number:"
+msgstr "USB序列号(serial):"
+
+msgid "USB Vendor ID:"
+msgstr "USB制造商ID:"
+
+msgid "USB Product ID:"
+msgstr "USB产品ID:"
+
+msgid "Manufacturer String:"
+msgstr "制造商字符串(manufacturer):"
+
+msgid "Product String:"
+msgstr "产品字符串(product):"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "USB Gadget Base Info"
+msgstr "USB工具基本信息"
+
+msgid "USB Device Controller (UDC):"
+msgstr "USB设备控制器(UDC):"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Hardware error"
+msgstr "硬件错误"
+
+msgid "Filesystem structure error"
+msgstr "文件系统结构错误"
+
+msgid "Not exists"
+msgstr "不存在"
+
+msgid "Disk full"
+msgstr "磁盘已满"
+
+msgid "File locked"
+msgstr "文件已锁"
+
+msgid "Access denied"
+msgstr "拒绝访问"
+
+msgid "Filesystem busy"
+msgstr "文件系统忙"
+
+msgid "Process timeout"
+msgstr "处理超时"
+
+msgid "Not implemented"
+msgstr "未实现"
+
+msgid "Out of memory"
+msgstr "资源不足"
+
+msgid "Invalid parameter"
+msgstr "无效的参数"
+
+msgid "Unknown error"
+msgstr "未知错误"
+
+msgid "Choose type to create"
+msgstr "选择要创建的类型"
+
+msgid "Create item name"
+msgstr "新建名称"
+
+msgid "Create '%s' failed: %s"
+msgstr "创建'%s'失败: %s"
+
+msgid "Item rename"
+msgstr "项目重命名"
+
+msgid "File select invalid"
+msgstr "文件选择无效"
+
+msgid "Rename '%s' to '%s' failed: %s"
+msgstr "重命名'%s'为'%s'失败: %s"
+
+msgid "Vibrate %dms"
+msgstr "振动%d毫秒"
+
+msgid "Sleep %dms"
+msgstr "等待%d毫秒"
+
+msgid "Invalid time number"
+msgstr "无效的时间数字"
+
+msgid "Input step time (ms)"
+msgstr "输入步骤时间（毫秒）"
+
+msgid "Vibrate"
+msgstr "震动"
+
+msgid "Sleep"
+msgstr "等待"
+
+msgid "Select step type"
+msgstr "选择步骤类型"
+
+msgid "Clean all items?"
+msgstr "清空所有项目？"
+
+msgid "No any steps configured"
+msgstr "没有配置任何步骤"
+
+msgid "Call vibrator failed: %m"
+msgstr "调用震动失败: %m"
+
+msgid "Create thread failed: %m"
+msgstr "创建线程失败: %m"
+
+msgid "Vibrator Tester"
+msgstr "震动测试器"
+
+msgid "Parent key"
+msgstr "上级键"
+
+msgid "Are you sure you want to delete the selected items?"
+msgstr "确定要删除选中的项目吗？"
+
+msgid "Config Manager"
+msgstr "配置管理器"
+
+msgid "save config item '%s' failed: %m"
+msgstr "保存配置项'%s'失败: %m"
+
+msgid "'%s' is an exists key, do you want to overwrite it?"
+msgstr "'%s'是一个存在的键，确定要覆盖它吗？"
+
+msgid "Edit config item"
+msgstr "编辑配置项"
+
+msgid "Create config item"
+msgstr "创建配置项"
+
+msgid "Config item path:"
+msgstr "配置项路径："
+
+msgid "String"
+msgstr "字符串"
+
+msgid "Integer"
+msgstr "整型数字"
+
+msgid "Boolean"
+msgstr "布尔值"
+
+msgid "Value:"
+msgstr "值："
+
+msgid "Config Manager Create"
+msgstr "配置管理器-创建"
+
+msgid "list items failed"
+msgstr "列出项目失败"
+
+msgid "Text Editor"
+msgstr "文本编辑器"
+
+msgid "Allocate file buffer failed"
+msgstr "分配文件缓冲区失败"
+
+msgid "File too large; size limit is 8MiB, file is %d bytes"
+msgstr "文件过大；文件大小限制为8MiB，文件大小为%d字节"
+
+msgid "Read file failed: %s"
+msgstr "读取文件失败: %s"
+
+msgid "Open file failed: %s"
+msgstr "打开文件失败: %s"
+
+msgid "Get file size failed: %s"
+msgstr "获取文件大小失败: %s"
+
+msgid "Write file failed: %s"
+msgstr "写入文件失败: %s"
+
+msgid "Write file maybe failed, wrote %d of %d bytes"
+msgstr "写入文件可能失败，已写入%d字节，总共%d字节"
+
+msgid "This file is bigger than 64 KiB (%d bytes), are you sure you want to open this file?"
+msgstr "这个文件大于64KiB（%d字节），你确定要打开这个文件吗？"
+
+msgid "The buffer has changed, do you want to discard any changes?"
+msgstr "缓冲区已经修改，确定要丢弃所有更改吗？"
+
+msgid "No matching string found"
+msgstr "找不到匹配的字符串"
+
+msgid "Searched to the end of the file, do you want to go back to the head and continue searching?"
+msgstr "已经搜索到文件结尾，是否要回到文件顶部继续搜索？"
+
+msgid "Open file"
+msgstr "打开文件"
+
+msgid "Save file"
+msgstr "保存文件"
+
+msgid "Search text"
+msgstr "查找文本"
+
+msgid "Menu"
+msgstr "菜单"
+
+msgid "Copy selected"
+msgstr "复制所选"
+
+msgid "Cut selected"
+msgstr "剪切所选"
+
+msgid "Paste"
+msgstr "粘贴"
+
+msgid "New file"
+msgstr "新建文件"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save as"
+msgstr "另存为"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Mon"
+msgstr "一"
+
+msgid "Tue"
+msgstr "二"
+
+msgid "Wed"
+msgstr "三"
+
+msgid "Thu"
+msgstr "四"
+
+msgid "Fri"
+msgstr "五"
+
+msgid "Sat"
+msgstr "六"
+
+msgid "Sun"
+msgstr "日"
+
+msgid "January"
+msgstr "一月"
+
+msgid "February"
+msgstr "二月"
+
+msgid "March"
+msgstr "三月"
+
+msgid "April"
+msgstr "四月"
+
+msgid "May"
+msgstr "五月"
+
+msgid "June"
+msgstr "六月"
+
+msgid "July"
+msgstr "七月"
+
+msgid "August"
+msgstr "八月"
+
+msgid "September"
+msgstr "九月"
+
+msgid "October"
+msgstr "十月"
+
+msgid "November"
+msgstr "十一月"
+
+msgid "December"
+msgstr "十二月"
+
+msgid "Calendar"
+msgstr "日历"
+
+msgid "File Open"
+msgstr "文件打开"
+
+msgid "Open file with"
+msgstr "文件打开方式"
+
+msgid "Select file to save"
+msgstr "选择要保存的文件"
+
+msgid "Select file to load"
+msgstr "选择要加载的文件"
+
+msgid "Save config failed: %m"
+msgstr "保存配置文件失败: %m"
+
+msgid "Load config failed: %m"
+msgstr "加载配置文件失败: %m"
+
+msgid "Save config to '%s'?"
+msgstr "是否保存配置到文件'%s'？"
+
+msgid "Load config to '%s'?"
+msgstr "是否从文件'%s'加载配置？"
+
+msgid "Save Config"
+msgstr "保存配置文件"
+
+msgid "Load Config"
+msgstr "加载配置文件"
+
+msgid "UEFI Application Start"
+msgstr "启动UEFI程序"
+
+msgid "open registry file '%s' failed: %m"
+msgstr "打开注册表文件'%s'失败: %m"
+
+msgid "open registry root failed: %m"
+msgstr "打开注册表根失败: %m"
+
+msgid "Save registry file failed: %m"
+msgstr "保存注册表失败: %m"
+
+msgid "Select registry file to load"
+msgstr "选择要加载的注册表文件"
+
+msgid "Mount Manager"
+msgstr "挂载管理器"
+
+msgid "Mount"
+msgstr "挂载"
+
+msgid "Unmount"
+msgstr "卸载"
+
+msgid "Unmount failed: %m"
+msgstr "卸载失败: %m"
+
+msgid "Are you sure you want to unmount '%s'?"
+msgstr "你确定要卸载'%s'吗？"
+
+msgid "Read mount table failed"
+msgstr "读取挂载表失败"
+
+msgid "invalid virtual terminal number\n"
+msgstr "无效的虚拟终端\n"
+
+msgid "change virtual terminal failed"
+msgstr "切换虚拟终端失败"
+
+msgid ""
+"Usage: chvt N\n"
+"Change foreground virtual terminal.\n\n"
+"Arguments:\n"
+"\tN:           /dev/ttyN\n"
+"Options:\n"
+"\t-h, --help   display this help and exit\n"
+msgstr ""
+"用法: chvt N\n"
+"切换前台虚拟终端.\n\n"
+"参数:\n"
+"\tN:           /dev/ttyN\n"
+"选项:\n"
+"\t-h, --help   查看此帮助\n"
+
+msgid "Change foreground virtual terminal"
+msgstr "切换前台虚拟终端"
+
+msgid "chroot failed"
+msgstr "切换根目录失败"
+
+msgid "chdir failed"
+msgstr "切换工作目录失败"
+
+msgid "execvp failed"
+msgstr "执行命令失败"
+
+msgid ""
+"Usage: chroot [OPTIONS] <ROOT> [COMMAND [ARGS]...]\n"
+"Change to new root and execute command.\n\n"
+"Options:\n"
+"\t-s, --skip-chdir  do not change working directory to '/'\n"
+"\t-d, --chdir=DIR   change working directory to DIR\n"
+"\t-h, --help        display this help and exit\n"
+"If no command is given, run \"$SHELL -i\"."
+msgstr ""
+"用法: chroot [选项] <新根> [命令 [参数]...]\n"
+"切换到新根并执行命令.\n\n"
+"选项:\n"
+"\t-s, --skip-chdir  不要切换工作目录到'/'\n"
+"\t-d, --chdir=DIR   切换工作目录到DIR\n"
+"\t-h, --help        查看此帮助\n"
+"如果没有指定命令，则执行\"$SHELL -i\"."
+
+msgid "Change to new root and execute command"
+msgstr "切换到新根并执行命令"
+
+msgid "No mount points found"
+msgstr "没有找到任何挂载点"
+
+msgid "Show all mountpoints"
+msgstr "显示所有挂载点"
+
+msgid "open folder failed"
+msgstr "打开文件夹失败"
+
+msgid "Usage: lsfd\n"
+msgstr "使用方法: lsfd\n"
+
+msgid "readlink %s failed"
+msgstr "读取链接%s失败"
+
+msgid "List shell open file descriptors"
+msgstr "列出Shell已打开的文件"
+
+msgid "invalid file descriptor\n"
+msgstr "无效的文件描述符\n"
+
+msgid "close failed"
+msgstr "关闭失败"
+
+msgid "Usage: close <FD>\n"
+msgstr "使用方法: close <文件描述符>\n"
+
+msgid "Close a file descriptor"
+msgstr "关闭一个文件描述符"
+
+msgid "Usage: write <FD> <DATA>...\n"
+msgstr "使用方法: write <文件描述符> <数据>...\n"
+
+msgid "write failed"
+msgstr "写错误"
+
+msgid "Write data to file descriptor"
+msgstr "将数据写到指定文件描述符"
+
+msgid "Echo string"
+msgstr "打印字符串"
+
+msgid "Unknown disk label"
+msgstr "未知的分区表"
+
+msgid "Create disk label failed: %m"
+msgstr "创建分区表失败: %m"
+
+msgid ""
+"You will recreate the partition table of the disk. "
+"All partitions of the disk will be DELETED and ALL DATA "
+"IN THE DISK WILL BE LOST. Are you sure you want to continue?"
+msgstr ""
+"你正在重新创建该磁盘的分区表，"
+"该磁盘的所有的分区会被删除，"
+"磁盘中的数据将会丢失，"
+"你确定要继续吗？"
+
+msgid "Disk is read-only mode"
+msgstr "磁盘是只读模式"
+
+msgid "Create new disk label"
+msgstr "创建新分区表"
+
+msgid "Erase the disk"
+msgstr "抹掉此磁盘"
+
+msgid "Save disk image"
+msgstr "保存磁盘镜像"
+
+msgid "Restore disk image"
+msgstr "恢复磁盘镜像"
+
+msgid "USB Gadget Mass Storage"
+msgstr "USB大容量存储工具"
+
+msgid "Select disk label"
+msgstr "选择分区表"
+
+msgid "Select operation"
+msgstr "选择操作"
+
+msgid "Invalid partition type"
+msgstr "无效分区类型"
+
+msgid "Allocate partition failed"
+msgstr "分配分区失败"
+
+msgid "Set partition start failed: %m"
+msgstr "设置分区起始位置失败: %m"
+
+msgid "Set partition size failed: %m"
+msgstr "设置分区大小失败: %m"
+
+msgid "Lookup partition type failed"
+msgstr "查找分区类型失败"
+
+msgid "Set partition type failed: %m"
+msgstr "设置分区类型失败: %m"
+
+msgid "Set partition number failed: %m"
+msgstr "设置分区序号失败: %m"
+
+msgid "Add partition failed: %m"
+msgstr "添加分区失败: %m"
+
+msgid "New Partition"
+msgstr "新建分区"
+
+msgid "Start:"
+msgstr "起始:"
+
+msgid "End:"
+msgstr "结束:"
+
+msgid "Size:"
+msgstr "大小:"
+
+msgid "Partition Type:"
+msgstr "分区类型:"
+
+msgid "Partition Number:"
+msgstr "分区序号:"
+
+msgid "The operation will be applied after restarting USB Gadget service, "
+"do you want to restart USB Gadget service?"
+msgstr "操作将在重启USB工具服务后应用，你是否要重启USB工具服务？"
+
+msgid "Open disk file"
+msgstr "打开磁盘文件"
+
+msgid "Add Mass Storage"
+msgstr "添加大容量存储"
+
+msgid "Add Mass Storage into USB Gadget"
+msgstr "添加大容量存储到USB工具"
+
+msgid "Name:"
+msgstr "名称:"
+
+msgid "Path:"
+msgstr "路径:"
+
+msgid "Disk file path is not absolute"
+msgstr "磁盘文件路径不是绝对路径"
+
+msgid "stat disk file failed: %m"
+msgstr "获取磁盘文件信息失败: %m"
+
+msgid "Invalid disk file"
+msgstr "无效磁盘文件"
+
+msgid "CDROM"
+msgstr "光盘"
+
+msgid "Removable"
+msgstr "可移除"
+
+msgid "Read Only"
+msgstr "只读"
+
+msgid "Partition table has been modified. "
+"Do you want to save it?"
+msgstr "分区表已修改，是否保存？"
+
+msgid "Delete partition failed: %m"
+msgstr "删除分区失败: %m"
+
+msgid "You will delete the partition. "
+"ALL DATA IN THE PARTITION WILL BE LOST. "
+"Are you sure you want to continue?"
+msgstr "你正在删除该分区，"
+"该分区中的数据将会丢失，"
+"你确定要继续吗？"
+
+msgid "Mount partition"
+msgstr "挂载分区"
+
+msgid "Delete partition"
+msgstr "删除分区"
+
+msgid "Resize partition"
+msgstr "调整分区大小"
+
+msgid "Change partition type"
+msgstr "更改分区类型"
+
+msgid "Wipe partition label"
+msgstr "清除分区中的文件系统"
+
+msgid "Erase partition"
+msgstr "抹掉此分区"
+
+msgid "Save partition image"
+msgstr "保存分区镜像"
+
+msgid "Restore partition image"
+msgstr "恢复分区镜像"
+
+msgid "You will wipe the partition label. "
+"ALL DATA IN THE PARTITION WILL BE LOST. "
+"Are you sure you want to continue?"
+msgstr "你正在清除分区中的标识，"
+"该分区中的数据将会丢失，"
+"你确定要继续吗？"
+
+msgid "Wipe partition label failed: %m"
+msgstr "清除分区中的标识失败: %m"
+
+msgid "Invalid disk"
+msgstr "无效磁盘"
+
+msgid "Change Partition Type"
+msgstr "更改分区类型"
+
+msgid "Select item"
+msgstr "选择项目"
+
+msgid "Invalid mount source"
+msgstr "无效的挂载设备"
+
+msgid "Invalid mount target"
+msgstr "无效的挂载目标"
+
+msgid "Init libmount context failed"
+msgstr "初始化libmount上下文失败"
+
+msgid "Failed to set mount options"
+msgstr "设置挂载选项失败"
+
+msgid "Failed to set mount filesystem type"
+msgstr "设置挂载文件系统类型失败"
+
+msgid "Failed to set mount source"
+msgstr "设置挂载设备失败"
+
+msgid "Failed to set mount target"
+msgstr "设置挂载目标文件夹失败"
+
+msgid "Mount failed: %s"
+msgstr "挂载失败: %s"
+
+msgid "Add Mount"
+msgstr "添加挂载"
+
+msgid "Device:"
+msgstr "设备:"
+
+msgid "Target:"
+msgstr "目标:"
+
+msgid "Type:"
+msgstr "类型:"
+
+msgid "Options:"
+msgstr "选项:"
+
+msgid "Set partition name failed: %m"
+msgstr "设置分区名称失败: %m"
+
+msgid "Change partition name failed: %m"
+msgstr "修改分区名称失败: %m"
+
+msgid "Input new name"
+msgstr "输入新名称"
+
+msgid "Change partition name"
+msgstr "更改分区名称"
+
+msgid "Mount the whole disk"
+msgstr "挂载整个磁盘"
+
+msgid "Change partition size failed: %m"
+msgstr "修改分区大小失败: %m"
+
+msgid "Resize Partition"
+msgstr "调整分区大小"
+
+msgid "Screen Color Test"
+msgstr "屏幕色彩测试"
+
+msgid "Clipboard"
+msgstr "剪贴板"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Copy all"
+msgstr "全部复制"
+
+msgid "Cut"
+msgstr "剪切"
+
+msgid "Cut all"
+msgstr "全部剪切"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete all"
+msgstr "全部删除"
+
+msgid "Select all"
+msgstr "全选"
+
+msgid "Deselect"
+msgstr "取消选择"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "red"
+msgstr "红色"
+
+msgid "green"
+msgstr "绿色"
+
+msgid "blue"
+msgstr "蓝色"
+
+msgid "cyan"
+msgstr "青色"
+
+msgid "yellow"
+msgstr "黄色"
+
+msgid "purple"
+msgstr "紫色"
+
+msgid "black"
+msgstr "黑色"
+
+msgid "white"
+msgstr "白色"
+
+msgid "gray"
+msgstr "灰色"
+
+msgid "Add into clipboard"
+msgstr "添加到剪贴板"
+
+msgid "Edit clipboard item"
+msgstr "编辑剪贴板项目"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Clear"
+msgstr "清空"
+
+msgid "Use"
+msgstr "使用"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Open picture"
+msgstr "打开图片"
+
+msgid "Picture Viewer"
+msgstr "图片查看器"
+
+msgid "Select background"
+msgstr "选择背景"
+
+msgid "Background"
+msgstr "背景"
+
+msgid "Default SwitchRoot"
+msgstr "默认根目录"
+
+msgid "Enter Simple Init"
+msgstr "进入Simple Init"
+
+msgid "Charger Screen"
+msgstr "充电屏幕"
+
+msgid "Power off system"
+msgstr "关机"
+
+msgid "Reboot system"
+msgstr "重启"
+
+msgid "Reboot into EDL"
+msgstr "重启到紧急下载(EDL)"
+
+msgid "Reboot into recovery"
+msgstr "重启到恢复模式(Recovery)"
+
+msgid "Reboot into bootloader"
+msgstr "重启到线刷模式(Fastboot)"
+
+msgid "Auto boot in %d seconds"
+msgstr "%d 秒后自动启动"
+
+msgid "Boot Menu"
+msgstr "启动菜单"
+
+msgid "Boot"
+msgstr "启动"
+
+msgid "Control"
+msgstr "控制"
+
+msgid "Control Pad"
+msgstr "控制板"
+
+msgid "Nothing opens"
+msgstr "什么都没打开"
+
+msgid "Picture load failed"
+msgstr "图片加载失败"
+
+msgid "Success"
+msgstr "成功"
+
+msgid "Unknown Glyph"
+msgstr "未知字形"
+
+msgid "Delete Failure"
+msgstr "删除失败"
+
+msgid "Write Failure"
+msgstr "写入失败"
+
+msgid "Buffer Too Small"
+msgstr "缓冲区过小"
+
+msgid "Stale Data"
+msgstr "过时数据"
+
+msgid "Load Error"
+msgstr "加载错误"
+
+msgid "Invalid Parameter"
+msgstr "无效参数"
+
+msgid "Unsupported"
+msgstr "不支持的操作"
+
+msgid "Bad Buffer Size"
+msgstr "无效的缓冲区大小"
+
+msgid "Not Ready"
+msgstr "未就绪"
+
+msgid "Device Error"
+msgstr "设备错误"
+
+msgid "Write Protected"
+msgstr "设备写保护"
+
+msgid "Out of Resources"
+msgstr "资源不足"
+
+msgid "Volume Corrupt"
+msgstr "卷损坏"
+
+msgid "Volume Full"
+msgstr "卷已满"
+
+msgid "No Media"
+msgstr "无媒体"
+
+msgid "Media changed"
+msgstr "媒体已更改"
+
+msgid "Not Found"
+msgstr "未找到"
+
+msgid "Access Denied"
+msgstr "访问被禁止"
+
+msgid "No Response"
+msgstr "无响应"
+
+msgid "No mapping"
+msgstr "无映射"
+
+msgid "Time out"
+msgstr "操作超时"
+
+msgid "Not started"
+msgstr "操作未开始"
+
+msgid "Already started"
+msgstr "操作已开始"
+
+msgid "Aborted"
+msgstr "操作已取消"
+
+msgid "ICMP Error"
+msgstr "ICMP错误"
+
+msgid "TFTP Error"
+msgstr "TFTP错误"
+
+msgid "Protocol Error"
+msgstr "协议错误"
+
+msgid "Incompatible Version"
+msgstr "版本不兼容"
+
+msgid "Security Violation"
+msgstr "安全违规"
+
+msgid "CRC Error"
+msgstr "CRC验证错误"
+
+msgid "End of Media"
+msgstr "已到媒体末尾"
+
+msgid "End of File"
+msgstr "已到文件结尾"
+
+msgid "Invalid Language"
+msgstr "无效的语言"
+
+msgid "Compromised Data"
+msgstr "数据受损"
+
+msgid "get device path failed"
+msgstr "获取设备路径失败"
+
+msgid "load image failed: %s"
+msgstr "加载镜像失败: %s"
+
+msgid "open protocol failed: %s"
+msgstr "打开协议失败: %s"
+
+msgid "handle protocol failed: %s"
+msgstr "处理协议失败: %s"
+
+msgid "append device path node failed"
+msgstr "追加设备节点失败"
+
+msgid ""
+"Usage: abootimg [OPTIONS]...\n"
+"Android boot image tools.\n\n"
+"Options: \n"
+"\t-c, --create <IMG>      create new image\n"
+"\t-x, --extract <IMG>     extract image\n"
+"\t-u, --update <IMG>      update image\n"
+"\t-k, --kernel <KERNEL>   kernel path\n"
+"\t-r, --ramdisk <RAMDISK> ramdisk path (initramfs)\n"
+"\t-s, --second <SECOND>   second stage bootloader path\n"
+"\t-b, --cmdline <CMDLINE> set boot cmdline (bootargs max 511 chars)\n"
+"\t-n, --name <NAME>       set image name (max 15 chars)\n"
+"\t-p, --page <PAGE>       set page size (default 4096)\n"
+"\t-f, --force             force use stdin or stdout when tty\n"
+"\t-o, --overwrite         do not backup anything\n"
+"\t-h, --help              show this help\n"
+
+msgstr ""
+"使用方法: abootimg [选项]...\n"
+"安卓启动镜像工具.\n\n"
+"选项: \n"
+"\t-c, --create <镜像>     创建新镜像\n"
+"\t-x, --extract <镜像>    解包镜像\n"
+"\t-u, --update <镜像>     更新镜像\n"
+"\t-k, --kernel <内核>     内核镜像路径\n"
+"\t-r, --ramdisk <内存盘>  内存盘路径 (initramfs)\n"
+"\t-s, --second <第二引导> 第二阶段引导器路径\n"
+"\t-b, --cmdline <CMDLINE> 设置启动命令行 (bootargs 最多511字符)\n"
+"\t-n, --name <名称>       设置镜像名称 (最多15字符)\n"
+"\t-p, --page <PAGE>       设置页大小\n"
+"\t-f, --force             强制使用标准输入或标准输出\n"
+"\t-o, --overwrite         不要备份任何文件\n"
+"\t-h, --help              查看此帮助\n"
+
+msgid "Android Boot Image Tools"
+msgstr "安卓启动镜像工具"
+
+msgid "read image from stdin...\n"
+msgstr "从标准输入读取镜像...\n"
+
+msgid "load image from '%s'...\n"
+msgstr "从'%s'加载镜像...\n"
+
+msgid "load image failed"
+msgstr "加载镜像失败"
+
+msgid "write image to stdout...\n"
+msgstr "写入镜像到标准输出...\n"
+
+msgid "backup '%s' to '%s'\n"
+msgstr "备份'%s'为'%s'\n"
+
+msgid "save image to '%s'...\n"
+msgstr "保存镜像到'%s'...\n"
+
+msgid "save image failed"
+msgstr "保存镜像失败"
+
+msgid "warning: looks like an empty image\n"
+msgstr "警告: 看着是一个空镜像\n"
+
+msgid "warning: looks like an invalid image\n"
+msgstr "警告: 看着是一个无效镜像\n"
+
+msgid "write kernel to stdout...\n"
+msgstr "写入内核到标准输出...\n"
+
+msgid "write ramdisk to stdout...\n"
+msgstr "写入内存盘到标准输出...\n"
+
+msgid "write second to stdout...\n"
+msgstr "写入第二阶段引导器到标准输出...\n"
+
+msgid "save kernel to '%s'...\n"
+msgstr "保存内核到'%s'...\n"
+
+msgid "save ramdisk to '%s'...\n"
+msgstr "保存内存盘到'%s'...\n"
+
+msgid "save second to '%s'...\n"
+msgstr "保存第二阶段引导器到'%s'...\n"
+
+msgid "save kernel failed"
+msgstr "保存内核失败"
+
+msgid "save ramdisk failed"
+msgstr "保存内存盘失败"
+
+msgid "save second failed"
+msgstr "保存第二阶段引导器失败"
+
+msgid "read kernel from stdin...\n"
+msgstr "从标准输入读取内核...\n"
+
+msgid "read ramdisk from stdin...\n"
+msgstr "从标准输入读取内存盘...\n"
+
+msgid "read second from stdin...\n"
+msgstr "从标准输入读取第二阶段引导器...\n"
+
+msgid "load kernel from '%s'...\n"
+msgstr "从'%s'加载内核...\n"
+
+msgid "load ramdisk from '%s'...\n"
+msgstr "从'%s'加载内存盘...\n"
+
+msgid "load second from '%s'...\n"
+msgstr "从'%s'加载第二阶段引导器...\n"
+
+msgid "load kernel failed"
+msgstr "加载内核失败"
+
+msgid "load ramdisk failed"
+msgstr "加载内存盘失败"
+
+msgid "load second failed"
+msgstr "加载第二阶段引导器失败"
+
+msgid "create new image...\n"
+msgstr "创建新镜像...\n"
+
+msgid "create image failed"
+msgstr "创建镜像失败"
+
+msgid "no kernel specified\n"
+msgstr "没有指定内核\n"
+
+msgid "stdout is a tty, use -f to force output\n"
+msgstr "标准输出是一个终端，使用-f强制输出\n"
+
+msgid "reuse of stdin is not allowed\n"
+msgstr "不允许重复使用标准输入\n"
+
+msgid "reuse of stdout is not allowed\n"
+msgstr "不允许重复使用标准输出\n"
+
+msgid "invalid argument\n"
+msgstr "无效参数\n"
+
+msgid "Go back"
+msgstr "返回"
+
+msgid "Continue Boot"
+msgstr "继续启动"
+
+msgid "Create"
+msgstr "创建"
+
+msgid "Extract"
+msgstr "解包"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Android Boot Image"
+msgstr "安卓启动镜像"
+
+msgid "Linux Kernel"
+msgstr "Linux内核"
+
+msgid "Ramdisk (initramfs)"
+msgstr "内存盘 (initramfs)"
+
+msgid "Second Stage Bootloader"
+msgstr "第二阶段引导器"
+
+msgid "Kernel Commandline"
+msgstr "内核命令行"
+
+msgid "Save image failed"
+msgstr "保存镜像失败"
+
+msgid "Save kernel failed"
+msgstr "保存内核失败"
+
+msgid "Save ramdisk failed"
+msgstr "保存内存盘失败"
+
+msgid "Save second failed"
+msgstr "保存第二阶段引导器失败"
+
+msgid "Load image failed"
+msgstr "加载镜像失败"
+
+msgid "Load kernel failed"
+msgstr "加载内核失败"
+
+msgid "Load ramdisk failed"
+msgstr "加载内存盘失败"
+
+msgid "Load second failed"
+msgstr "加载第二阶段引导器失败"
+
+msgid "Create new image failed"
+msgstr "创建新镜像失败"
+
+msgid "Operation done"
+msgstr "操作完成"
+
+msgid "Load file '%s' failed: %s"
+msgstr "加载文件'%s'失败: %s"
+
+msgid "No kernel specified"
+msgstr "未指定内核"
+
+msgid "Conflict options"
+msgstr "冲突的选项"
+
+msgid "Boot Linux"
+msgstr "启动Linux"
+
+msgid "Device Tree Blob (dtb)"
+msgstr "设备树 (dtb)"
+
+msgid "Boot with UEFI runtime"
+msgstr "使用UEFI运行环境启动"
+
+msgid "not a UEFI Driver"
+msgstr "不是一个UEFI驱动"
+
+msgid "start dxe failed: %s"
+msgstr "启动驱动失败: %s"
+
+msgid "Load UEFI Driver (DXE) '%s'?"
+msgstr "加载UEFI驱动 (DXE) '%s'?"
+
+msgid "UEFI Driver (DXE) Load"
+msgstr "加载UEFI驱动 (DXE)"
+
+msgid "Scroll text when overflow"
+msgstr "文本过长的时候滚动显示"
+
+msgid "auto load this dxe driver on next boot?"
+msgstr "下次启动时自动加载此UEFI驱动 (DXE)？"
+
+msgid "rename config item failed"
+msgstr "重命名配置项失败"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Boot Manager"
+msgstr "启动管理器"
+
+msgid "Are you sure you want to delete the boot item '%s' (%s)?"
+msgstr "你确定要删除启动项'%s'(%s)吗?"
+
+msgid "Are you sure you want to set boot item '%s' (%s) as default?"
+msgstr "你确定要将启动项'%s'(%s)设置为默认吗?"
+
+msgid "Boot Item Editor"
+msgstr "启动项编辑器"
+
+msgid "Description:"
+msgstr "描述:"
+
+msgid "Icon:"
+msgstr "图标:"
+
+msgid "Mode:"
+msgstr "模式:"
+
+msgid "Parent:"
+msgstr "父级:"
+
+msgid "Enable boot item"
+msgstr "启用启动项"
+
+msgid "Show in boot menu"
+msgstr "在启动菜单显示"
+
+msgid "Persist boot item"
+msgstr "永久启动项"
+
+msgid "Extra Items"
+msgstr "额外项目"
+
+msgid "Config Tool"
+msgstr "配置工具"
+
+msgid "Switch Root"
+msgstr "切换根"
+
+msgid "Charger"
+msgstr "充电器"
+
+msgid "Halt"
+msgstr "停机"
+
+msgid "System"
+msgstr "系统"
+
+msgid "UEFI App"
+msgstr "UEFI应用程序"
+
+msgid "UEFI Boot Option"
+msgstr "UEFI启动选项"
+
+msgid "Folder"
+msgstr "文件夹"
+
+msgid "Invalid boot item name."
+msgstr "无效的启动项名称"
+
+msgid "Invalid boot item mode."
+msgstr "无效的启动项模式"
+
+msgid "Invalid boot item parent."
+msgstr "无效的启动项父级目录"
+
+msgid "Unsupported boot item mode for extra data editor"
+msgstr "额外项编辑器不支持此启动项模式"
+
+msgid "Input reboot argument"
+msgstr "输入重启参数"
+
+msgid "Edit EFI Boot Item"
+msgstr "编辑EFI启动项"
+
+msgid "EFI File Path:"
+msgstr "EFI文件路径:"
+
+msgid "EFI Firmware Volume Guid:"
+msgstr "EFI固件卷GUID:"
+
+msgid "EFI Load Options:"
+msgstr "EFI加载选项:"
+
+msgid "Use options as wide char"
+msgstr "将选项作为宽字符"
+
+msgid "Boot Item Extra Data Editor"
+msgstr "启动项额外选项编辑器"
+
+msgid "Invalid number"
+msgstr "无效数字"
+
+msgid "Edit UEFI Option Boot Item"
+msgstr "编辑UEFI启动项"
+
+msgid "UEFI Option:"
+msgstr "UEFI启动项"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Edit Linux Boot Item"
+msgstr "编辑Linux启动项"
+
+msgid "Device Tree Overlay (dtbo)"
+msgstr "设备树附加层(dtbo)"
+
+msgid "Screen Framebuffer"
+msgstr "屏幕帧缓冲区"
+
+msgid "System Memory"
+msgstr "系统内存"
+
+msgid "Skip Device Tree Blob (dtb)"
+msgstr "跳过设备树(dtb)"
+
+msgid "Skip Device Tree Overlay (dtbo)"
+msgstr "跳过设备树附加层(dtbo)"
+
+msgid "Skip Initramfs"
+msgstr "跳过初始化内存盘(initrd)"
+
+msgid "Skip UEFI Memory Map"
+msgstr "跳过UEFI内存布局"
+
+msgid "Skip KernelFdtDxe System Memory"
+msgstr "跳过KernelFdtDxe系统内存"
+
+msgid "Skip KernelFdtDxe Commandline"
+msgstr "跳过KernelFdtDxe内核命令行"
+
+msgid "Match KernelFdtDxe Model"
+msgstr "匹配KernelFdtDxe的model"
+
+msgid "Ignore DTBO Error"
+msgstr "忽略设备树附加层(dtbo)错误"
+
+msgid "Use Custom Load Addresses"
+msgstr "使用自定义的加载地址"
+
+msgid "Default Load Address"
+msgstr "默认加载地址"
+
+msgid "Kernel Load Address"
+msgstr "内核加载地址"
+
+msgid "Initramfs Load Address"
+msgstr "初始化内存盘加载地址"
+
+msgid "Device Tree Load Address"
+msgstr "设备树加载地址"
+
+msgid "Update Screen Framebuffer"
+msgstr "更新屏幕帧缓冲区"
+
+msgid "(click button to add new)"
+msgstr "(点击按钮新建)"
+
+msgid "Invalid memory address or size"
+msgstr "无效的内存地址或大小"
+
+msgid "Edit Memory Region"
+msgstr "编辑内存区域"
+
+msgid "Memory Start Address (Hex):"
+msgstr "内存起始地址(十六进制):"
+
+msgid "Memory Size (Hex):"
+msgstr "内存大小(十六进制):"
+
+msgid "Memory End Address (hex):"
+msgstr "内存结束地址(十六进制):"
+
+msgid "Edit item"
+msgstr "编辑项目"
+
+msgid "Create new item"
+msgstr "创建新项目"
+
+msgid "ACPI Manager"
+msgstr "ACPI管理器"
+
+msgid "Load"
+msgstr "加载"
+
+msgid "Select aml file to save"
+msgstr "选择要保存的aml文件"
+
+msgid "Select aml file to load"
+msgstr "选择要加载的aml文件"
+
+msgid "Save %s failed"
+msgstr "保存%s失败"
+
+msgid "Read file %s failed"
+msgstr "读取文件%s失败"
+
+msgid "Install ACPI Table failed: %s"
+msgstr "安装ACPI表失败: %s"
+
+msgid "Locate ACPI Protocol failed: %s"
+msgstr "获取ACPI表协议失败: %s"
+
+msgid "No any ACPI tables found"
+msgstr "找不到任何ACPI表"
+
+msgid "Address: 0x%llx Size: %d OEM ID: %s"
+msgstr "地址: 0x%llx 大小: %d OEM ID: %s"
+
+msgid "Load ACPI Table"
+msgstr "加载ACPI表"
+
+msgid "Load ACPI table from '%s'?"
+msgstr "从'%s'加载ACPI表?"
+
+msgid "Show all apps"
+msgstr "显示所有软件"
+
+msgid "Lua Script"
+msgstr "Lua脚本"
+
+msgid "Invalid device tree %s"
+msgstr "无效设备树%s"
+
+msgid "Install device tree failed: %s"
+msgstr "加载设备树失败: %s"
+
+msgid "Load device tree blob from '%s'?"
+msgstr "从'%s'加载设备树?"
+
+msgid "Load device tree blob"
+msgstr "加载设备树"
+
+msgid "Do you want to exit terminal emulator?"
+msgstr "你确定要退出终端模拟器吗？"
+
+msgid "Select string to copy"
+msgstr "选择要复制的字符串"
+
+msgid "[Process %d exited by signal %s (%d)]"
+msgstr "[进程 %d 已被信号 %s (%d) 结束]"
+
+msgid "[Process %d exited with status %d]"
+msgstr "[进程 %d 以状态 %d 退出]"
+
+msgid "[Process %d exited]"
+msgstr "[进程 %d 已退出]"
+
+msgid "[syscall select failed: %s]"
+msgstr "[系统调用select失败: %s]"
+
+msgid "[port closed]"
+msgstr "[端口已关闭]"
+
+msgid "[receive data failed: %s]"
+msgstr "[接收数据失败: %s]"
+
+msgid "[send data failed: %s]"
+msgstr "[发送数据失败: %s]"
+
+msgid "[open port %s failed: %s]"
+msgstr "[打开端口%s失败: %s]"
+
+msgid "[serial port %s opened]"
+msgstr "[串行端口 %s 已打开]"
+
+msgid "[no serial port specified]"
+msgstr "[未指定串行端口]"
+
+msgid "[setup serial port speed failed: %s]"
+msgstr "[配置串行端口速率失败: %s]"
+
+msgid "Serial Port"
+msgstr "串行端口"
+
+msgid "Terminal"
+msgstr "终端"
+
+msgid "Open Serial Port"
+msgstr "打开串口"
+
+msgid "Please select a serial port"
+msgstr "请选择一个串行端口"
+
+msgid "(Keep default)"
+msgstr "(保持默认)"
+
+msgid "Port:"
+msgstr "端口:"
+
+msgid "Speed:"
+msgstr "速率:"
+
+msgid "Pointer Test"
+msgstr "光标测试"
+
+msgid "This app will have exclusive pointer input, are you sure to continue?"
+msgstr "此应用将会独占光标输入，确认继续吗？"
+
+msgid "Invalid memory size"
+msgstr "无效内存大小"
+
+msgid "Invalid memory type"
+msgstr "无效内存类型"
+
+msgid "Invalid disk type"
+msgstr "无效磁盘类型"
+
+msgid "Locate RamDisk protocol failed: %s"
+msgstr "获取内存盘协议失败: %s"
+
+msgid "Failed to allocate memory: %s"
+msgstr "无法分配内存: %s"
+
+msgid "Failed to open file %s: %s"
+msgstr "无法打开文件%s: %s"
+
+msgid "Get file info failed: %s"
+msgstr "读取文件信息失败: %s"
+
+msgid "Memory too small to read file"
+msgstr "指定内存对于文件太小，无法读取文件"
+
+msgid "Failed to register ramdisk: %s"
+msgstr "无法注册内存盘: %s"
+
+msgid "Add Ramdisk"
+msgstr "添加内存盘"
+
+msgid "Image:"
+msgstr "镜像:"
+
+msgid "Memory Size:"
+msgstr "内存大小:"
+
+msgid "Memory Type:"
+msgstr "内存类型:"
+
+msgid "Disk Type:"
+msgstr "磁盘类型:"
+
+msgid "Boot Services Data"
+msgstr "启动服务数据"
+
+msgid "Reserved Memory"
+msgstr "保留内存"
+
+msgid "Conventional Memory"
+msgstr "传统内存"
+
+msgid "Virtual CD"
+msgstr "虚拟光盘"
+
+msgid "Virtual Disk"
+msgstr "虚拟磁盘"
+
+msgid "Persistent Virtual CD"
+msgstr "永久虚拟光盘"
+
+msgid "Persistent Virtual Disk"
+msgstr "永久虚拟磁盘"
+
+msgid "No buffer found"
+msgstr "没有找到缓冲区"
+
+msgid "Cleanup...\n"
+msgstr "清理中...\n"
+
+msgid "epoll wait failed"
+msgstr "epoll调用失败"
+
+msgid "No any devices found\n"
+msgstr "找不到任何设备\n"
+
+msgid "epoll malloc failed"
+msgstr "epoll分配失败"
+
+msgid "epoll create failed"
+msgstr "epoll创建失败"
+
+msgid "Terminated by %s\n"
+msgstr "已被信号%s结束\n"
+
+msgid "opendir failed"
+msgstr "打开文件夹失败"
+
+msgid "Unknown option: %s\n"
+msgstr "未知选项: %s\n"
+
+msgid "Usage: dumpinput [INPUT]...\n"
+msgstr "使用方法: dumpinput [输入设备]...\n"
+
+msgid "read %d failed"
+msgstr "读取%d失败"
+
+msgid ""
+" ! Device %s:%s "
+"Type: %-6s ( %3d / 0x%03X ), "
+"Code: %-28s ( %4d / 0x%04X ), "
+"Value: %8d / 0x%08X (%s)\n"
+msgstr ""
+" ! 设备 %s:%s "
+"类型: %-6s ( %3d / 0x%03X ), "
+"键: %-28s ( %4d / 0x%04X ), "
+"值: %8d / 0x%08X (%s)\n"
+
+msgid "read %d(%s) failed"
+msgstr "读取 %d(%s) 失败"
+
+msgid "cannot bind netlink socket"
+msgstr "无法绑定netlink套接字"
+
+msgid "cannot create netlink socket"
+msgstr "无法创建netlink套接字"
+
+msgid " + Add device %s fd %d (%s)\n"
+msgstr " + 添加设备 %s 描述符 %d (%s)\n"
+
+msgid "open %s failed"
+msgstr "打开 %s 失败"
+
+msgid "skip device '%s'\n"
+msgstr "跳过设备'%s'\n"
+
+msgid "invalid device '%s'\n"
+msgstr "无效设备'%s'\n"
+
+msgid " - Delete device %s fd %d\n"
+msgstr " - 删除设备 %s 描述符 %d\n"
+
+msgid " - Delete fd %d\n"
+msgstr " - 删除描述符 %d\n"
+
+msgid "add fd %d(%s) to epoll failed"
+msgstr "添加描述符 %d(%s) 到epoll失败"
+
+msgid "add fd %d to epoll failed"
+msgstr "添加描述符 %d 到epoll失败"
+
+msgid "alloc device failed"
+msgstr "分配设备失败"
+
+msgid "Fetch input devices events"
+msgstr "获取输入设备事件"
+
+msgid "Edit registry value"
+msgstr "编辑注册表值"
+
+msgid "Value name:"
+msgstr "值名称:"
+
+msgid "Digital base:"
+msgstr "数字进制:"
+
+msgid "Octal (8)"
+msgstr "八进制"
+
+msgid "Decimal (10)"
+msgstr "十进制"
+
+msgid "Hexadecimal (16)"
+msgstr "十六进制"
+
+msgid "Select type to add"
+msgstr "选择要添加的类型"
+
+msgid "Registry Key"
+msgstr "注册表项"
+
+msgid "String Value"
+msgstr "字符串值"
+
+msgid "Multi String Value"
+msgstr "多个字符串值"
+
+msgid "DWORD Value (int32)"
+msgstr "DWORD值(int32)"
+
+msgid "QWORD Value (int64)"
+msgstr "QWORD值(int32)"
+
+msgid "Binary Data Value"
+msgstr "二进制数据值"
+
+msgid "One or more items failed to delete"
+msgstr "有一个或多个项目删除失败"
+
+msgid "Are you sure you want to delete selected items?"
+msgstr "你确定要删除选中的项目吗？"
+
+msgid "Parse value failed: %s"
+msgstr "解析值失败: %s"
+
+msgid "Set value failed: %s"
+msgstr "设置值失败: %s"
+
+msgid ""
+"Notice: Registry Editor is currently in an early beta version, "
+"it MAY DAMAGE YOUR REGISTRY, please backup and use it with caution."
+msgstr ""
+"注意：注册表编辑器目前处于早期测试版本，"
+"有可能会损坏你的注册表，请备份并谨慎使用"
+
+msgid ""
+"Notice: Registry Editor is currently in an early beta version, "
+"it MAY DAMAGE YOUR REGISTRY, are you sure you want to continue save?"
+msgstr ""
+"注意：注册表编辑器目前处于早期测试版本，"
+"有可能会损坏你的注册表，确定要继续保存吗？"
+
+msgid "Registry has changed, do you want to discard any changes?"
+msgstr "注册表已经修改，确定要丢弃所有更改吗？"
+
+msgid "Add registry value failed: %m"
+msgstr "添加注册表值失败: %m"
+
+msgid "Add registry key failed: %m"
+msgstr "添加注册表项失败: %m"
+
+msgid "Edit Registry Value"
+msgstr "编辑注册表值"
+
+msgid "Only file:// path supported"
+msgstr "只支持file://路径"

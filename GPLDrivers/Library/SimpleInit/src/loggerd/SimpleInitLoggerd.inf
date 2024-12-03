@@ -1,0 +1,36 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SimpleInitLoggerd
+  FILE_GUID                      = 88FE3206-389E-4737-B97F-0A029C5508D3
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = SimpleInitLoggerd
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  PcdLib
+  BaseLib
+  UefiLib
+  DebugLib
+  PrintLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  SimpleInitLocate
+
+[Guids]
+  gEfiFileInfoGuid
+
+[Pcd]
+  gSimpleInitTokenSpaceGuid.PcdLoggerdMinLevel
+
+[Sources]
+  # Simple-Init loggerd UEFI wrapper
+  client.c
+  buffer.c
+  lib.c

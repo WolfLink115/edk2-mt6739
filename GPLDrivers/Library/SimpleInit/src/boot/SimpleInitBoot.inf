@@ -1,0 +1,55 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SimpleInitBoot
+  FILE_GUID                      = E26E1264-A06A-4140-AFE2-70B1B6103CB9
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = SimpleInitBoot
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  UefiLib
+  BaseLib
+  BaseMemoryLib
+  DevicePathLib
+  MemoryAllocationLib
+  UefiBootManagerLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  SimpleInitLua
+  SimpleInitLib
+  SimpleInitBootLinux
+  SimpleInitLocate
+  SimpleInitConfd
+  SimpleInitLoggerd
+
+[Guids]
+  gSimpleInitFileGuid
+  gEfiFileInfoGuid
+  gEfiFileSystemVolumeLabelInfoIdGuid
+
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+
+[Sources]
+  lua.c
+  cpu.c
+  efi.c
+  exit.c
+  boot.c
+  linux.c
+  prober.c
+  splash.c
+  bootdef.c
+  drivers.c
+  efi_path.c
+  reboot_uefi.c
+  uefi_option.c

@@ -1,0 +1,24 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SimpleInitAssets
+  FILE_GUID                      = 944F44B0-E8A9-450A-9FFF-952382AEF03E
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = SimpleInitAssets
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  UefiLib
+  SimpleInitLib
+  SimpleInitRootFS
+  SimpleInitCompatible
+
+[Sources]
+  # Simple-Init builtin assets library
+  assets.c

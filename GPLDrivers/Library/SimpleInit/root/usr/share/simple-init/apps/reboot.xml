@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SimpleInitActivity compatible="2">
+	<Name>reboot-menu</Name>
+	<Title>Reboot Menu</Title>
+	<ShowApp>true</ShowApp>
+	<AllowBack>true</AllowBack>
+	<MaskBackground>true</MaskBackground>
+	<LayoutFile>/usr/share/simple-init/gui/reboot.xml</LayoutFile>
+</SimpleInitActivity>

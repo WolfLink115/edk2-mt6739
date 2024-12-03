@@ -1,0 +1,32 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Zlib
+  FILE_GUID                      = C387C149-50D8-432F-8B01-0FB573440377
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = Zlib
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h -Wno-implicit-fallthrough
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  UefiLib
+
+[Sources]
+  libs/zlib/zutil.c
+  libs/zlib/adler32.c
+  libs/zlib/inftrees.c
+  libs/zlib/inflate.c
+  libs/zlib/inffast.c
+  libs/zlib/deflate.c
+  libs/zlib/compress.c
+  libs/zlib/crc32.c
+  libs/zlib/gzread.c
+  libs/zlib/gzwrite.c
+  libs/zlib/gzclose.c
+  libs/zlib/trees.c
+  libs/zlib/uncompr.c

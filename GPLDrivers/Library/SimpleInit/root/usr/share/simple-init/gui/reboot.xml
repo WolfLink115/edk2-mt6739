@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SimpleInitGUI compatible="2">
+	<Code id="code-reboot">if not feature("uefi")then init.reboot()end</Code>
+	<Code id="code-reboot-cold">if feature("uefi")then uefi.Reboot("cold")end</Code>
+	<Code id="code-reboot-warm">if feature("uefi")then uefi.Reboot("warm")end</Code>
+	<Code id="code-poweroff">if feature("uefi")then uefi.Reboot("poweroff") else init.poweroff()end</Code>
+	<Code id="code-fastboot">if feature("uefi")then uefi.Reboot("fastboot") else init.reboot("bootloader")end</Code>
+	<Code id="code-recovery">if feature("uefi")then uefi.Reboot("recovery") else init.reboot("recovery")end</Code>
+	<Code id="code-edl">if feature("uefi")then uefi.Reboot("edl") else init.reboot("edl")end</Code>
+	<VerticalBox
+		attr:width="?gui_dpi*2"
+		attr:max-width="80%"
+		attr:max-height="80%"
+		attr:min-width="20%"
+		attr:min-height="20%"
+		attr:center="true"
+		style:pad-all="20">
+		<Label
+			style:text-align="center"
+			attr:width="100%"
+			attr:text="Select an action you want to do"/>
+		<If condition="feature('uefi')">
+			<ButtonItem
+				id="btn-reboot-cold"
+				event:clicked="code-reboot-cold"
+				attr:grid-dsc="auto|#1@#1"
+				attr:width="100%">
+				<Wrapper
+					attr:content-size="?gui_font_size*2"
+					attr:grid-cell="center"
+					style:pad-all="0">
+					<Image
+						attr:size-mode="real"
+						attr:fill="?gui_font_size*2"
+						attr:src="@reboot-reboot-cold"
+						attr:center="true"/>
+				</Wrapper>
+				<Label
+					attr:text="Cold Reboot"
+					attr:long-mode="dot"
+					attr:grid-cell="stretch:center"/>
+			</ButtonItem>
+			<ButtonItem
+				id="btn-reboot-warm"
+				event:clicked="code-reboot-warm"
+				attr:grid-dsc="auto|#1@#1"
+				attr:width="100%">
+				<Wrapper
+					attr:content-size="?gui_font_size*2"
+					attr:grid-cell="center"
+					style:pad-all="0">
+					<Image
+						attr:size-mode="real"
+						attr:fill="?gui_font_size*2"
+						attr:src="@reboot-reboot-warm"
+						attr:center="true"/>
+				</Wrapper>
+				<Label
+					attr:text="Warm Reboot"
+					attr:long-mode="dot"
+					attr:grid-cell="stretch:center"/>
+			</ButtonItem>
+		</If><Else>
+			<ButtonItem
+				id="btn-reboot"
+				event:clicked="code-reboot"
+				attr:grid-dsc="auto|#1@#1"
+				attr:width="100%">
+				<Wrapper
+					attr:content-size="?gui_font_size*2"
+					attr:grid-cell="center"
+					style:pad-all="0">
+					<Image
+						attr:size-mode="real"
+						attr:fill="?gui_font_size*2"
+						attr:src="@reboot-reboot"
+						attr:center="true"/>
+				</Wrapper>
+				<Label
+					attr:text="Reboot"
+					attr:long-mode="dot"
+					attr:grid-cell="stretch:center"/>
+			</ButtonItem>
+		</Else>
+		<ButtonItem
+			id="btn-edl"
+			event:clicked="code-edl"
+			attr:grid-dsc="auto|#1@#1"
+			attr:width="100%">
+			<Wrapper
+				attr:content-size="?gui_font_size*2"
+				attr:grid-cell="center"
+				style:pad-all="0">
+				<Image
+					attr:size-mode="real"
+					attr:fill="?gui_font_size*2"
+					attr:src="@reboot-edl"
+					attr:center="true"/>
+			</Wrapper>
+			<Label
+				attr:text="Reboot into EDL (9008)"
+				attr:long-mode="dot"
+				attr:grid-cell="stretch:center"/>
+		</ButtonItem>
+		<ButtonItem
+			id="btn-recovery"
+			event:clicked="code-recovery"
+			attr:grid-dsc="auto|#1@#1"
+			attr:width="100%">
+			<Wrapper
+				attr:content-size="?gui_font_size*2"
+				attr:grid-cell="center"
+				style:pad-all="0">
+				<Image
+					attr:size-mode="real"
+					attr:fill="?gui_font_size*2"
+					attr:src="@reboot-recovery"
+					attr:center="true"/>
+			</Wrapper>
+			<Label
+				attr:text="Reboot into Recovery"
+				attr:long-mode="dot"
+				attr:grid-cell="stretch:center"/>
+		</ButtonItem>
+		<ButtonItem
+			id="btn-fastboot"
+			style:outline-width="1"
+			event:clicked="code-fastboot"
+			attr:grid-dsc="auto|#1@#1"
+			attr:width="100%">
+			<Wrapper
+				attr:content-size="?gui_font_size*2"
+				attr:grid-cell="center"
+				style:pad-all="0">
+				<Image
+					attr:size-mode="real"
+					attr:fill="?gui_font_size*2"
+					attr:src="@reboot-fastboot"
+					attr:center="true"/>
+			</Wrapper>
+			<Label
+				attr:text="Reboot into Bootloader"
+				attr:long-mode="dot"
+				attr:grid-cell="stretch:center"/>
+		</ButtonItem>
+		<ButtonItem
+			id="btn-poweroff"
+			event:clicked="code-poweroff"
+			attr:grid-dsc="auto|#1@#1"
+			attr:width="100%">
+			<Wrapper
+				attr:content-size="?gui_font_size*2"
+				attr:grid-cell="center"
+				style:pad-all="0">
+				<Image
+					attr:size-mode="real"
+					attr:fill="?gui_font_size*2"
+					attr:src="@reboot-poweroff"
+					attr:center="true"/>
+			</Wrapper>
+			<Label
+				attr:text="Power Off"
+				attr:long-mode="dot"
+				attr:grid-cell="start:center"/>
+		</ButtonItem>
+	</VerticalBox>
+</SimpleInitGUI>

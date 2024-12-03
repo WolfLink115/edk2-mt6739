@@ -1,0 +1,183 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SimpleInitGUI
+  FILE_GUID                      = 8802F36D-0078-4595-8124-13E13EFB8E5F
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = SimpleInitGUI
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  EmbeddedPkg/EmbeddedPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  BaseLib
+  DevicePathLib
+  MemoryAllocationLib
+  STBLib
+  PcdLib
+  UefiLib
+  TimerLib
+  LittleVgl
+  FreeType
+  NanoSVG
+  LodePNG
+  TSMLib
+  MiniXML
+  RegexLib
+  HivexLib
+  SimpleInitLua
+  SimpleInitLib
+  SimpleInitBoot
+  SimpleInitBootLinux
+  SimpleInitConfd
+  SimpleInitLoggerd
+  SimpleInitLocate
+  SimpleInitAssets
+  SimpleInitFileSystem
+  ReportStatusCodeLib
+  UefiBootManagerLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+
+[Guids]
+  gFdtTableGuid
+  gEfiFileInfoGuid
+  gUefiShellFileGuid
+  gEfiFileSystemVolumeLabelInfoIdGuid
+  gLinuxSimpleMassStorageGuid
+  gEfiAcpi10TableGuid
+  gEfiAcpi20TableGuid
+
+[Protocols]
+  gEfiAbsolutePointerProtocolGuid
+  gEfiSimplePointerProtocolGuid
+  gEfiSimpleTextInProtocolGuid
+  gEfiGraphicsOutputProtocolGuid
+  gEfiUgaDrawProtocolGuid
+  gEfiLoadedImageProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiTimestampProtocolGuid
+  gEfiAcpiTableProtocolGuid
+
+[Pcd]
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultRotate
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultMouseScale
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultMouseOnlyFirst
+
+[Sources]
+  # Simple-Init GUI interface
+  tools.c
+  color.c
+  activity.c
+  activities.c
+  gui_init.c
+  guidrv.c
+  drivers.c
+  drivers/modes.c
+  drivers/dummy.c
+  drivers/uefi_gop.c
+  drivers/uefi_uga.c
+  drivers/uefi_pointer.c
+  drivers/uefi_keyboard.c
+  drivers/uefi_touch.c
+  decoders/stb.c
+  decoders/png.c
+  decoders/bmp.c
+  decoders/svg.c
+  decoders/jpeg.c
+  decoders/image.c
+  decoders/freetype.c
+  lua/lua.c
+  lua/render.c
+  lua/render_obj.c
+  lua/render_event.c
+  lua/activity.c
+  lua/sysbar.c
+  lua/lvgl/lvgl.c
+  lua/lvgl/obj.c
+  lua/lvgl/lib.c
+  theme/icon.c
+  engine/app.c
+  engine/lib.c
+  engine/code.c
+  engine/event.c
+  engine/style.c
+  engine/struct.c
+  engine/inline.c
+  engine/render.c
+  engine/object.c
+  engine/objects.c
+  engine/activity.c
+  engine/attribute.c
+  engine/attributes/pos.c
+  engine/attributes/bool.c
+  engine/attributes/size.c
+  engine/attributes/input.c
+  engine/attributes/image.c
+  engine/attributes/layout.c
+  engine/attributes/generic.c
+  engine/data/attr_hands.c
+  engine/data/obj_hands.c
+  engine/data/style_props.c
+  engine/data/style_set_type.c
+  interface/filemgr/filemgr.c
+  interface/filemgr/filetab.c
+  interface/filemgr/fileview.c
+  interface/filemgr/fileopen.c
+  interface/bootmgr/bootmgr.c
+  interface/bootmgr/bootitem.c
+  interface/bootmgr/bootdata_efi.c
+  interface/bootmgr/bootdata_linux.c
+  interface/bootmgr/bootdata_memreg.c
+  interface/bootmgr/bootdata_uefi_option.c
+  interface/widgets/filepicker.c
+  interface/widgets/inputbox.c
+  interface/widgets/msgbox.c
+  interface/settings/language.c
+  interface/settings/mouse.c
+  interface/settings/theme.c
+  interface/conftool/create.c
+  interface/conftool/confsave.c
+  interface/conftool/confload.c
+  interface/conftool/conftool.c
+  interface/term/termview.c
+  interface/term/console.c
+  interface/term/baudrates.c
+  interface/term/serialport.c
+  interface/term/serialopen.c
+  interface/core/sysbar.c
+  interface/core/snackbar.c
+  interface/core/guiapp.c
+  interface/core/bootmenu.c
+  interface/core/ctrl_pad.c
+  interface/core/clipboard.c
+  interface/core/splash.c
+  interface/apps/acpi.c
+  interface/apps/abootimg.c
+  interface/apps/boot_linux.c
+  interface/apps/benchmark.c
+  interface/apps/fdt.c
+  interface/apps/uefi_bootmenu.c
+  interface/apps/uefi_start.c
+  interface/apps/uefi_dxe_load.c
+  interface/apps/uefi_shell.c
+  interface/apps/uefi_mass.c
+  interface/apps/text_editor.c
+  interface/apps/logviewer.c
+  interface/apps/calendar.c
+  interface/apps/scr_test.c
+  interface/apps/picture.c
+  interface/apps/pointer_test.c
+  interface/apps/ramdisk.c
+  interface/regedit/regedit.c
+  interface/regedit/string.c
+  interface/regedit/edit_value.c
+  string/string.c

@@ -1,0 +1,46 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SimpleInitConfd
+  FILE_GUID                      = 8BE9190F-4974-4625-8725-2F3913CCAE07
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = SimpleInitConfd
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -include src/config-uefi.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SimpleInit.dec
+
+[LibraryClasses]
+  JSONC
+  MiniXML
+  PcdLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  SimpleInitLib
+  SimpleInitCompatible
+  SimpleInitFileSystem
+
+[Sources]
+  # Simple-Init confd
+  dump.c
+  uefi.c
+  store.c
+  file.c
+  file_conf.c
+  json_conf.c
+  xml_conf.c
+
+[Guids]
+  gEfiFileInfoGuid
+
+[Protocols]
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiPartitionInfoProtocolGuid
+
+[FixedPcd]
+  gSimpleInitTokenSpaceGuid.PcdConfDefaultPrefix
+  gSimpleInitTokenSpaceGuid.PcdConfDefaultStaticPrefix
